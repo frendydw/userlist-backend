@@ -28,8 +28,8 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public User get(int id) {
 		Session currentSession = entityManager.unwrap(Session.class);
-		User employeeObj = currentSession.get(User.class, id);
-		return employeeObj;
+		User userObj = currentSession.get(User.class, id);
+		return userObj;
 	}
 
 	@Override

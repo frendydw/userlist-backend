@@ -44,7 +44,7 @@ public class UserController {
 		return userObj;
 	}
 	
-	@PutMapping("/user")
+	@PutMapping("/user/{id}")
 	public User update(@RequestBody User userObj) {
 		userService.save(userObj);
 		return userObj;
